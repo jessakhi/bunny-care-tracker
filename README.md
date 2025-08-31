@@ -53,8 +53,7 @@ I want to practice:
 
 * **Frontend:** React + TailwindCSS (for fast and cute styling ✨)
 * **Backend:** Node.js + Express
-* **Database (beginner mode):** Local Storage or IndexedDB
-* **Database (upgrade mode):** SQLite or MongoDB
+* **Database :**  MongoDB
 * **Charts:** Chart.js / Recharts
 * **Calendar:** FullCalendar (React integration)
 * **Design Assets:** Made by me in Piskel
@@ -73,7 +72,7 @@ I’ll add screenshots of the app once the first features are working. Expect pi
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/bunny-care-tracker.git
+git clone https://github.com/jessakhi/bunny-care-tracker.git
 cd rabbit-care-tracker
 ```
 
