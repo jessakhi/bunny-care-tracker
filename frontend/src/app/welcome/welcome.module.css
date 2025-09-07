@@ -1,0 +1,119 @@
+/* === STAGE / FOND === */
+.stage {
+  position: relative;
+  width: 100vw;           /* remplit la largeur */
+  max-width: 1920px;      /* limite desktop */
+  aspect-ratio: 16 / 9;   /* garde les proportions Figma */
+  overflow: hidden;
+  margin: 0 auto;         /* centré */
+  background: linear-gradient(
+    180deg,
+    #D9EAB0 0%,
+    rgba(225, 235, 179, 0.93149) 56.73%,
+    rgba(254, 238, 189, 0.7) 100%
+  );
+}
+
+/* === ÉLÉMENTS ABSOLUS (valeurs converties de 1920×1080 en %) === */
+.title {
+  position: absolute;
+  left: 11.406%;
+  top: 15.278%;
+  width: 77.188%;
+  height: 18.981%;
+}
+
+.treatLeft {
+  position: absolute;
+  left: -2.828%;
+  top: 6.204%;
+  width: 13.465%;
+  height: 23.386%;
+  transform: rotate(-30deg);
+  transform-origin: center;
+}
+
+.treatRight {
+  position: absolute;
+  left: 84.115%;
+  top: 6.204%;
+  width: 13.465%;
+  height: 23.386%;
+  transform: matrix(-0.87, -0.5, -0.5, 0.87, 0, 0);
+  transform-origin: center;
+}
+
+.plant {
+  position: absolute;
+  left: 4.896%;
+  top: 29.444%;
+  width: 35.052%;
+  height: 66.019%;
+}
+
+.lamp {
+  position: absolute;
+  left: 62.083%;
+  top: 34.259%;
+  width: 29.271%;
+  height: 56.481%;
+}
+
+.books {
+  position: absolute;
+  left: 76.146%;
+  top: 67.037%;
+  width: 17.083%;
+  height: 30.37%;
+}
+
+.bunny {
+  position: absolute;
+  left: 31.042%;
+  top: 34.259%;
+  width: 40.521%;
+  height: 72.037%;
+}
+
+.welcomeBox {
+  position: absolute;
+  left: 39.948%;
+  top: 36.852%;
+  width: 22.135%;
+  height: 13.148%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === BOUTON Welcome (style figma) === */
+.welcomeButton {
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4.8vw, 3rem); /* responsive */
+  background: #FFF1CC;
+  color: #FFC156;
+  border: 5px solid #F9CB7B;
+  border-radius: 10px;
+  box-shadow: 0 6px 0 #E7C27E;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.welcomeButton:hover {
+  background: #F9CB7B;
+  color: #FFF1CC;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #FFF1CC;
+}
+
+/* === Images: remplissage propre === */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* === PETITES ADAPTATIONS MOBILE SI BESOIN (optionnel) === */
+@media (max-width: 640px) {
+  .welcomeButton { font-size: clamp(1.4rem, 5vw, 2.2rem); }
+}
